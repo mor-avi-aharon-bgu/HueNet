@@ -1,3 +1,8 @@
+Differentiable Histogram Loss Functions for Intensity-based Image-to-Image Translation
+-------------------------------------------------------------
+by Mor Avi-Aharon, Assaf Arbelle and Tammy Riklin Raviv
+
+
 Prerequisites
 -------------------------------------------------------------
 The code runs on linux machines with NVIDIA GPUs. 
@@ -19,22 +24,22 @@ DeepHist edges2photos
 -------------------------------------------------------------
 Download a edges2photos dataset (e.g edges2shoes)
 
-python ./datasets/download_pix2pix_datasets.py 
+`python ./datasets/download_pix2pix_datasets.py`
 
-* edit dataset_name in ./datasets/download_pix2pix_datasets.py  for other dataset
+* edit `dataset_name` in `./datasets/download_pix2pix_datasets.py`  for other dataset
 
 Train a model:
-python train.py --dataroot /home/<user_name>/.keras/datasets --task edges2photos
+`python train.py --dataroot /home/<user_name>/.keras/datasets --task edges2photos`
 
 
 DeepHist colorization
 -------------------------------------------------------------
 Download a CycleGAN dataset (e.g. summer2winter_yosemite):
 
-bash ./datasets/download_cyclegan_datasets.sh summer2winter_yosemite
+`bash ./datasets/download_cyclegan_datasets.sh summer2winter_yosemite`
 
 Train a model:
-python train.py --dataroot ./datasets --task colorization
+`python train.py --dataroot ./datasets --task colorization`
 
 
 DeepHist color transfer
@@ -43,7 +48,7 @@ Download and unzip 102 Flower Category Database from:
 https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html
 
 Train a model:
-python train.py --dataroot ./datasets --task color_transfer
+`python train.py --dataroot ./datasets --task color_transfer`
 
 
 References
@@ -54,7 +59,6 @@ References
   booktitle={Computer Vision (ICCV), 2017 IEEE International Conference on},
   year={2017}
 }
-
 
 @inproceedings{isola2017image,
   title={Image-to-Image Translation with Conditional Adversarial Networks},
