@@ -2,6 +2,7 @@ Differentiable Histogram Loss Functions for Intensity-based Image-to-Image Trans
 -------------------------------------------------------------
 by Mor Avi-Aharon, Assaf Arbelle and Tammy Riklin Raviv
 
+accepted to TPAMI - DOI: 10.1109/TPAMI.2023.3278287
 
 Prerequisites
 -------------------------------------------------------------
